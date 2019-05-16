@@ -1,5 +1,5 @@
 Simple poll app written in react/redux
 
-## yarn install
+## npm install
 
-## yarn start
+## npm run start
