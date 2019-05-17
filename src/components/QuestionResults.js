@@ -8,6 +8,7 @@ function QuestionResults(props) {
   return (
     <StyledBody style={{ marginLeft: "25px" }}>
       <span style={{ marginLeft: "10px" }}>
+      {question.optionOne.votes.length} out of {Object.keys(users).length} users voted for{" "}
         {question.optionOne.text}{" "}
         {users[authedUser].answers[question.id] === "optionOne" && (
           <b>(your choice)</b>
@@ -46,6 +47,7 @@ function QuestionResults(props) {
 
       <br />
       <span style={{ marginLeft: "10px" }}>
+        {question.optionTwo.votes.length} out of {Object.keys(users).length} users voted for{" "}
         {question.optionTwo.text}{" "}
         {users[authedUser].answers[question.id] === "optionTwo" && (
           <b>(your choice)</b>
